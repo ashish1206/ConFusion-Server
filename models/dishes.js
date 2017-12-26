@@ -19,7 +19,9 @@ var commentSchema = new Schema({
         type:String,
         required: true
     }
-},{
+},
+{   usePushEach: true },
+{
     timestamps: true
 });
 
@@ -56,7 +58,9 @@ const dishschema = new Schema({
     
     comments: [commentSchema]
     
-},{
+},
+{ usePushEach: true },
+{
     timestamps: true
 });
 
